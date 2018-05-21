@@ -1,3 +1,3 @@
 #!/usr/bin/with-contenv bash
 
-exec /usr/sbin/sshd -D -E /var/log/auth.log
+exec /usr/sbin/sshd -D -E /config/log/sshd/auth.log
