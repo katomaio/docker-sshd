@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+
+mkdir -p /config/log/sshd /config/log/fail2ban
+
+# Keygen for when host keys dont exist yet
+ssh-keygen -A
