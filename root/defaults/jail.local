@@ -16,9 +16,9 @@ findtime  = 600
 maxretry = 5
 
 
-[ssh]
-
-enabled = true
-filter  = sshd
-port    = ssh
-logpath = /config/log/sshd/auth.log
+[sshd]
+enabled  = true
+filter   = alpine-sshd
+port     = ssh
+logpath  = /config/log/sshd/auth.log
+maxretry = 10
