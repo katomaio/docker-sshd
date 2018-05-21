@@ -13,7 +13,7 @@ RUN apk add --no-cache \
       bash \
       openssh \
     && chmod +x /etc/services.d/*/run /etc/cont-init.d/* \
-    # Fail2ban
+    && rm /etc/fail2ban/jail.d/alpine-ssh.conf \
     && mkdir -p /defaults/fail2ban \
     && mv /etc/fail2ban/action.d /defaults/fail2ban/ \
     && mv /etc/fail2ban/filter.d /defaults/fail2ban/
